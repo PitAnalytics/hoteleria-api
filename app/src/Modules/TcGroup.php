@@ -11,11 +11,7 @@ class TcSubgroup extends Connection{
 
 
   }
-  public function distinct(){
 
-
-    
-  }
 
 }
 ?>

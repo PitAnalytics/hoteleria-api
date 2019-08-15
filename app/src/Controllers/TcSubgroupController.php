@@ -14,7 +14,7 @@ class TcSubgroupController extends Controller{
         //config by default
         $this->config=$this->container['config'];
         $this->bigquery=$this->container['bigquery']($this->config->google('bigquery'));
-        //$this->modules['pac']=$this->container['pac']($this->bigquery);
+        $this->modules['tc-subgroup']=$this->container['tc-subgroup']($this->bigquery);
 
     }
 

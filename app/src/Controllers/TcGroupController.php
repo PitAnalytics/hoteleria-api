@@ -14,7 +14,7 @@ class TcGroupController extends Controller{
         //config by default
         $this->config=$this->container['config'];
         $this->bigquery=$this->container['bigquery']($this->config->google('bigquery'));
-        //$this->modules['pac']=$this->container['pac']($this->bigquery);
+        $this->modules['tc-group']=$this->container['tc-group']($this->bigquery);
 
     }
 

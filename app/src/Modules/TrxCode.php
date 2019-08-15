@@ -12,11 +12,5 @@ class TrxCode extends Connection{
 
   }
 
-  public function distinct(){
-
-
-    
-  }
-
 }
 ?>
