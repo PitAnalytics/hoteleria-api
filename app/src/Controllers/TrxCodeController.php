@@ -22,8 +22,13 @@ class TrxCodeController extends Controller{
 
         $get=$this->modules['trx-code']->get($args['key']);
 
-        print_r($get);
+        //respuesta con cabeceras http
+        $response1 = $response->withJson($get,201);
+        $response2 = $response1
+        ->withHeader('Access-Control-Allow-Origin', '*')
+        ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
 
+        return $response2;
     }
 
 }
