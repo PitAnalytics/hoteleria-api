@@ -20,7 +20,7 @@ class TrxCodeController extends Controller{
 
     public function index($request,$response,$args){
 
-        
+        echo('ok');
 
     }
 

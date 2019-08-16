@@ -20,7 +20,8 @@ class TcSubgroupController extends Controller{
 
     public function index($request,$response,$args){
 
-        
+        echo('ok');
+
 
     }
 

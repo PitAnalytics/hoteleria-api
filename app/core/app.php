@@ -23,11 +23,11 @@ require_once '../app/core/container.php';
 /*****ROUTER***********/
 /**********************/
 //
-$app->get('/', \App\Controllers\TrxController::class.':wellcome');
+$app->get('/', \App\Controllers\TrxCodeController::class.':wellcome');
 
 $app->get('/tc-group', \App\Controllers\TcGroupController::class.':index');
 $app->get('/tc-subgroup/{key}', \App\Controllers\PacController::class.':index');
-$app->get('/trx-code/{key}', \App\Controllers\TrxController::class.':index');
+$app->get('/trx-code/{key}', \App\Controllers\TrxCodeController::class.':index');
 //
 /*********************/
 /*****EJECUTAMOS******/

@@ -20,7 +20,7 @@ class TcGroupController extends Controller{
 
     public function index($request,$response,$args){
 
-        
+        echo('ok');
 
     }
 
