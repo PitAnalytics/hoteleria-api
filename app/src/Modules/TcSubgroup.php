@@ -14,7 +14,7 @@ class TcSubgroup extends Connection{
     GROUP BY  TC_SUBGROUP
     ORDER BY TC_SUBGROUP";
 
-    return $this->bigquery->select($query);
+    return $this->bigquery->query($query);
 
   }
 
