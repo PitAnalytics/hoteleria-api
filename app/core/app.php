@@ -26,8 +26,8 @@ require_once '../app/core/container.php';
 $app->get('/', \App\Controllers\TrxCodeController::class.':wellcome');
 
 $app->get('/tc-group', \App\Controllers\TcGroupController::class.':index');
-$app->get('/tc-subgroup/{key}', \App\Controllers\TcSubgroupController::class.':index');
-$app->get('/trx-code/{key}', \App\Controllers\TrxCodeController::class.':index');
+$app->get('/tc-subgroup/{key}', \App\Controllers\TcSubgroupController::class.':get');
+$app->get('/trx-code/{key}', \App\Controllers\TrxCodeController::class.':get');
 //
 /*********************/
 /*****EJECUTAMOS******/

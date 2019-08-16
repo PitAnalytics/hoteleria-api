@@ -18,7 +18,7 @@ class TcSubgroupController extends Controller{
 
     }
 
-    public function index($request,$response,$args){
+    public function get($request,$response,$args){
 
         $get=$this->modules['tc-subgroup']->get($args['key']);
 
