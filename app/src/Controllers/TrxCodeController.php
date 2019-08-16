@@ -18,9 +18,11 @@ class TrxCodeController extends Controller{
 
     }
 
-    public function index($request,$response,$args){
+    public function get($request,$response,$args){
 
-        echo('ok');
+        $get=$this->modules['trx-code']->get($args['key']);
+
+        print_r($get);
 
     }
 

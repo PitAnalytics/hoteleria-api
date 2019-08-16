@@ -20,8 +20,9 @@ class TcGroupController extends Controller{
 
     public function index($request,$response,$args){
 
-        echo('ok');
+        $index=$this->modules['tc-group']->index();
 
+        print_r($index);
     }
 
 }
